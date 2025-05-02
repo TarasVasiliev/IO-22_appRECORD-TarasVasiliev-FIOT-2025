@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/lab5.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h2>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ
+                <h2>З ДИСЦИПЛІНИ «WEB-ОРІЄНТОВНАНІ ТЕХНОЛОГІЇ. ОСНОВИ FRONTEND та BACKEND РОЗРОБОК»</h2>
+            </h2>
+            <div class="cont">
+                <p class="htext">Студент групи ІО-22 Васильєв Тарас Миколайович</p>
+                <img src="../images/Тарас.JPG" alt="Тарас" class="image">
+            </div>
+            <div class="buttons">
+                <a href="../index.html" class="btn">Лабораторна<br>робота №1</a>
+                <a href="lab2.html" class="btn">Лабораторна<br>робота №2</a>
+                <a href="lab3_1.html" class="btn">Лабораторна<br>робота №3.1</a>
+                <a href="lab3_2.html" class="btn">Лабораторна<br>робота №3.2</a>
+                <a href="lab4.html" class="btn">Лабораторна<br>робота №4</a>
+                <a href="lab5.html" class="btn">Лабораторна<br>робота №5.1</a>
+                <a href="lab5_2.html" class="btn">Лабораторна<br>робота №5.2</a>
+                <a href="#" class="btn">Лабораторна<br>робота №6</a>
+                <a href="#" class="btn">Лабораторна<br>робота №7</a>
+                <a href="#" class="btn">Лабораторна<br>робота №8</a>
+                <a href="#" class="btn">Лабораторна<br>робота №9</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="sidebar-container">
+        <div class="sidebar-nav">
+            <button class="sidebar-button active" data-toggle="topic">Тема, мета ЛР №5.1. Місце розташування сайту та
+                звіту</button>
+            <button class="sidebar-button" data-toggle="task">Завдання</button>
+            <button class="sidebar-button" data-toggle="real">Реалізація</button>
+            <button class="sidebar-button" data-toggle="conclusion">Висновки</button>
+        </div>
+        <div class="sidebar-content">
+            <main>
+                <div class="content">
+                    <div class="topic hiddenable">
+                        <h2 class="center">Тема, мета, місце розташування WEB-застосунка та місце звітного
+                            HTML-документу</h2>
+                        <p class="main_text"><span style="font-weight: bold;">Тема:</span> КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ
+                            ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. </p>
+                        <p class="main_text"><span style="font-weight: bold;">Мета:</span> Придбати практичні навички
+                            роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як
+                            колбеки.
+                            Реалізація програм засовами мови JAVASCRIPT
+                        </p>
+                        <ul class="main_text">
+                            <li><a href="https://github.com/TarasVasiliev/Web_Sturtup.git">Посилання на
+                                    репозиторій власного WEB-застосунку</a></li>
+                            <li><a href="https://tarasvasiliev.github.io/Web_Sturtup/">Посилання на
+                                    репозиторій на живу сторінку власного WEB-застосунку</a></li>
+                            <li><a href="https://github.com/TarasVasiliev/IO-22_appRECORD-TarasVasiliev-FIOT-2025.git">Посилання
+                                    на
+                                    репозиторій звітного HTML-документа</a></li>
+                            <li><a href="#">Посилання на репозиторій на живу сторінку звітного HTML-документу</a></li>
+                        </ul>
+                    </div>
+                    <div class="task main_text hiddenable">
+                        <h2 class="center">Завдання</h2>
+                        <img src="../images/task1.png" alt="">
+                        <img src="../images/task2.png" alt="">
+                        <img src="../images/task3.png" alt="">
+                        <img src="../images/task4.png" alt="">
+                        <img src="../images/task5.png" alt="">
+                        <img src="../images/task6.png" alt="">
+                        <img src="../images/task7.png" alt="">
+                        <img src="../images/task8.png" alt="">
+                    </div>
+                    <div class="real main_text hiddenable">
+                        <div class="task2">
+                            <h2>Завдання 2</h2>
+                            <button onclick="swapValues()">SWAP ME</button>
+                            <input type="text" id="input1" placeholder="Перше поле">
+                            <input type="text" id="input2" placeholder="Друге поле">
+                        </div>
+                        <div class="task4">
+                            <h2>Завдання 4</h2>
+                            <div id="square"></div>
+                            <button onclick="resizeSquare(-15)">Зменшити</button>
+                            <button onclick="resizeSquare(15)">Збільшити</button>
+                        </div>
+                        <div class="task6">
+                            <h2>Завдання 6</h2>
+                            <ul id="numberList">
+                                <li>1</li>
+                                <li>4</li>
+                                <li>8</li>
+                                <li>16</li>
+                                <li>20</li>
+                                <li>30</li>
+                            </ul>
+                            <button onclick="doubleValues()">Подвоїти</button>
+                        </div>
+                        <div class="task7">
+                            <h2>Завдання 7</h2>
+                            <ul id="categories">
+                                <li class="item">
+                                    <h2>Animals</h2>
+                                    <ul>
+                                        <li>Cat</li>
+                                        <li>Hamster</li>
+                                        <li>Horse</li>
+                                        <li>Parrot</li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <h2>Products</h2>
+                                    <ul>
+                                        <li>Bread</li>
+                                        <li>Prasley</li>
+                                        <li>Cheese</li>
+                                    </ul>
+                                </li>
+                                <li class="item">
+                                    <h2>Technologies</h2>
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="task8">
+                            <h2>Завдання 8</h2>
+                            <form class="login-form">
+                                <label>
+                                    Email
+                                    <input type="email" name="email" />
+                                </label>
+                                <label>
+                                    Password
+                                    <input type="password" name="password" />
+                                </label>
+                                <button type="submit">Log in</button>
+                            </form>
+                        </div>
+                        <div class="task9">
+                            <h2>Завдання 9</h2>
+                            <div class="widget">
+                                <p>Background color: <span class="color">-</span></p>
+                                <button type="button" class="change-color">Change color</button>
+                            </div>
+                        </div>
+                        <div class="task10">
+                            <h2>Завдання 10</h2>
+                            <div id="controls">
+                                <input type="number" min="1" max="100" step="1" />
+                                <button type="button" data-create>Create</button>
+                                <button type="button" data-destroy>Destroy</button>
+                            </div>
+                            <div id="boxes"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="conclusion hiddenable">
+                    <h2 class="center">ВИСНОВОК</h2>
+                    <p class="main_text">У ході виконання практичних завдань було реалізовано кілька прикладів роботи з
+                        DOM, подіями та створенням елементів за допомогою JavaScript, що дозволило краще засвоїти основи
+                        теми «Класи. Об'єктна модель документа (DOM). Події. Об'єкт події. Делегування подій. Throttle».
+                        Ми працювали з подіями типу submit та click, здійснювали перевірку введених даних у формах,
+                        динамічно створювали елементи, змінювали стилі та працювали з властивістю event. Також
+                        реалізовано очищення і повторне рендерення елементів за допомогою DOM-методів, таких як
+                        querySelector, createElement, append, innerHTML. Об’єкт події використовувався для обробки
+                        натискань кнопок та отримання даних з інпутів. Було розглянуто концепцію делегування подій як
+                        ефективний спосіб керування великою кількістю елементів, при якому обробник подій призначається
+                        на спільний контейнер. Також коротко вивчено принцип дії техніки throttle, яка дозволяє обмежити
+                        частоту виклику функції, що особливо корисно при обробці подій, які відбуваються дуже часто
+                        (наприклад, scroll або resize). Отже, тема має важливе практичне значення для створення
+                        інтерактивних інтерфейсів користувача, а вивчені методи є базовими для розробки сучасних
+                        динамічних веб-застосунків.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+    <script src="../scripts/lab5.js"></script>
+</body>
+
+</html>
